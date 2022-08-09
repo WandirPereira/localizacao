@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.github.wandirpereira.localizacao.LocalizacaoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.264 s <<< FAILURE! - in com.github.wandirpereira.localizacao.LocalizacaoApplicationTests
+contextLoads  Time elapsed: 0.017 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'cidade0_.qtd_habitantes' in 'field list'
+
